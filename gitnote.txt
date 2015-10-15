@@ -1,0 +1,36 @@
+
+git init(第一次開資料夾)
+commit本機端版本更新
+push檔案上傳
+git pull更新
+
+
+◎下載github上資料夾整包
+cd githubtest~(命令列cd到想要儲存的資料夾)
+git clone https網址(github上https的網址)~(clone下載整包資料)
+
+◎git log(確認資料有沒有更改成功)
+  git status(確認資料有沒有更改成功)~commit前做
+
+◎github上現有資料夾的程式,clone下來更改完成,再push上去
+git add 檔名
+git commit -m "註解"
+git push
+
+◎要從本機端將資料夾的新程式push上去
+git add 檔名
+git commit -m "註解"
+git remote add origin [網址目的]§本機與github取得連線
+git push -u origin master
+
+◎將github上的資料夾檔案刪除
+手動將資料夾裡檔案刪除
+git add .
+git commit -m "delete 檔名"
+git push
+
+◎金鑰設定
+git clone ssh網址
+ssh-keygen -t rsa (將ssh金鑰設定(儲存在路徑裡的資料夾))
+將資料夾開啟把金鑰複製貼上↓
+github 個人 settings-sshkeys-add ssh key-貼上
